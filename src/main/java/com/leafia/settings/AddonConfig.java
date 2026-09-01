@@ -14,7 +14,7 @@ public class AddonConfig {
 	public static boolean useLeafiaTorex = true;
 	public static boolean enableHealthMod = true;
     public static int dfcComponentRange = 50;
-	public static boolean enableFirestorm = LeafiaDebug.isDevEnv;
+	public static boolean enableFirestorm = java.nio.file.Paths.get(".").toAbsolutePath().toString().replace("\\","/").contains("run/client");
 	public static boolean enableWackySplashes = true;
 	public static boolean enableAcidRainRender = true;
 	public static int meteorDiverterMinAliveTime = 30*60;
